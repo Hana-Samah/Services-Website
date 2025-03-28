@@ -1,0 +1,755 @@
+/* تنسيقات عامة */
+body {
+    font-family: 'Tajawal', sans-serif;
+    padding-top: 56px;
+    background-color: #f8f9fa;
+}
+
+/* شريط التنقل */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* هيرو سيكشن */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+/* صفحة العنوان */
+.page-header {
+    background-color: #0d6efd;
+    padding: 80px 0;
+}
+
+/* الأيقونات */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* البطاقات */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* الأزرار */
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+}
+
+/* الفوتر */
+footer {
+    background-color: #212529;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #0d6efd;
+    color: white !important;
+}
+
+/* خريطة */
+.map-container {
+    height: 400px;
+}
+
+/* تأثيرات للعناوين */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* تأثيرات للروابط */
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* تنسيقات للقوائم */
+.list-unstyled li {
+    margin-bottom: 8px;
+}
+
+/* تنسيقات للأكورديون */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(13, 110, 253, 0.25);
+}
+
+/* تنسيقات للفورم */
+.form-control, .form-select {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-floating label {
+    right: auto !important;
+    left: 0;
+    padding: 1rem 1.25rem;
+}
+
+/* تنسيقات RTL إضافية */
+.text-start {
+    text-align: right !important;
+}
+
+.text-end {
+    text-align: left !important;
+}
+
+.me-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+.ms-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+}
+
+/* تنسيقات للشريط الجانبي */
+.sidebar {
+    position: sticky;
+    top: 80px;
+}
+
+/* تنسيقات للصور */
+.img-thumbnail {
+    border-radius: 10px;
+}
+
+/* تنسيقات للجداول */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* تنسيقات للتنبيهات */
+.alert {
+    border-radius: 10px;
+}
+
+/* تأثيرات للروابط في القوائم */
+.nav-link {
+    font-weight: 500;
+}
+
+/* تنسيقات للعناوين في البطاقات */
+.card-title {
+    font-weight: 600;
+}
+
+/* تنسيقات للأزرار في البطاقات */
+.card .btn {
+    font-weight: 500;
+}
+
+/* تنسيقات للعناوين الرئيسية */
+.display-4 {
+    font-weight: 700;
+}
+
+/* تنسيقات للعناوين الفرعية */
+.lead {
+    font-weight: 400;
+}
+
+/* تنسيقات للروابط في الفوتر */
+footer a:hover {
+    color: #0d6efd !important;
+}
+
+/* تنسيقات للشريط العلوي */
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: var(--bs-breadcrumb-item-padding-x);
+    padding-right: 0;
+    content: var(--bs-breadcrumb-divider, "/");
+}
+
+/* تنسيقات للبطاقات في صفحة الخدمات */
+.service-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيقات لشعارات العملاء */
+.client-logo {
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيقات للفريق */
+.team-member {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.team-member img {
+    transition: all 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+.team-member .social-links {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .social-links {
+    bottom: 20px;
+}
+
+/* تنسيقات للأسئلة الشائعة */
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* تنسيقات للفورم في صفحة الاتصال */
+.contact-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* تنسيقات للخريطة */
+.map-container iframe {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* تأثيرات للروابط في القوائم */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+/* تنسيقات للعناوين في الأقسام */
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #0d6efd;
+}
+
+/* تنسيقات للبطاقات في صفحة عنا */
+.about-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيقات للقيم في صفحة عنا */
+.value-item {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيقات للفريق في صفحة عنا */
+.team-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيقات للروابط في البطاقات */
+.card-link {
+    color: #0d6efd;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    color: #0a58ca;
+}
+
+/* تنسيقات للأزرار في صفحة الخدمات */
+.service-btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* تنسيقات للعناوين في صفحة الخدمات */
+.service-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* تنسيقات للقوائم في صفحة الخدمات */
+.service-list {
+    list-style-type: none;
+    padding-right: 0;
+}
+
+.service-list li {
+    position: relative;
+    padding-right: 25px;
+    margin-bottom: 10px;
+}
+
+.service-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+/* تنسيقات للأسئلة الشائعة في صفحة الخدمات */
+.faq-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيقات للفورم في صفحة الاتصال */
+.contact-form .form-control {
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.contact-form .form-label {
+    font-weight: 500;
+}
+
+/* تنسيقات لمعلومات الاتصال في صفحة الاتصال */
+.contact-info {
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-item {
+    margin-bottom: 25px;
+}
+
+.contact-info-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+/* تنسيقات للأسئلة في صفحة الاتصال */
+.contact-question {
+    margin-bottom: 30px;
+}
+
+/* تنسيقات للروابط في الفوتر */
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: white;
+    padding-right: 5px;
+}
+
+/* تنسيقات للنشرة البريدية في الفوتر */
+.newsletter-form {
+    position: relative;
+}
+
+.newsletter-form .btn {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    bottom: 5px;
+    width: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* تنسيقات للشريط السفلي في الفوتر */
+.copyright {
+    font-size: 14px;
+}
+
+/* تنسيقات للروابط في الشريط السفلي */
+.copyright-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.copyright-link:hover {
+    color: white;
+}
+
+/* تأثيرات للبطاقات في صفحة الخدمات */
+.service-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card:hover .card-body * {
+    color: white !important;
+}
+
+.service-card:hover .btn {
+    background-color: white;
+    color: #0d6efd !important;
+}
+
+/* تأثيرات للبطاقات في صفحة عنا */
+.about-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.about-card:hover::before {
+    opacity: 1;
+}
+
+.about-card:hover .card-body * {
+    color: white !important;
+}
+
+.about-card:hover .btn {
+    background-color: white;
+    color: #0d6efd !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الفريق */
+.team-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.team-card:hover::before {
+    opacity: 1;
+}
+
+.team-card:hover .card-body * {
+    color: white !important;
+}
+
+.team-card:hover .social-links a {
+    background-color: white;
+    color: #0d6efd !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الأسئلة الشائعة */
+.faq-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+.faq-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.faq-card:hover::before {
+    opacity: 1;
+}
+
+.faq-card:hover .card-body * {
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الاتصال */
+.contact-info {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.contact-info:hover::before {
+    opacity: 1;
+}
+
+.contact-info:hover * {
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الخدمات */
+.service-card .icon-box {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .icon-box {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* تأثيرات للبطاقات في صفحة عنا */
+.about-card .icon-box {
+    transition: all 0.3s ease;
+}
+
+.about-card:hover .icon-box {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الفريق */
+.team-card .social-links a {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .social-links a:hover {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الأسئلة الشائعة */
+.faq-card .accordion-button {
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover .accordion-button {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الاتصال */
+.contact-info .contact-info-icon {
+    transition: all 0.3s ease;
+}
+
+.contact-info:hover .contact-info-icon {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الخدمات */
+.service-card .btn {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .btn:hover {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة عنا */
+.about-card .btn {
+    transition: all 0.3s ease;
+}
+
+.about-card:hover .btn:hover {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الفريق */
+.team-card .social-links a {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .social-links a:hover {
+    background-color: #0d6efd !important;
+    color: white !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الأسئلة الشائعة */
+.faq-card .accordion-button {
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover .accordion-button:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* تأثيرات للبطاقات في صفحة الاتصال */
+.contact-info .contact-info-icon {
+    transition: all 0.3s ease;
+}
+
+.contact-info:hover .contact-info-icon:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
